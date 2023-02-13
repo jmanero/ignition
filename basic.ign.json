@@ -1,0 +1,34 @@
+{
+  "ignition": {
+    "version": "3.3.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "name": "core",
+        "shouldExist": false
+      },
+      {
+        "groups": [
+          "sudo"
+        ],
+        "name": "jmanero",
+        "sshAuthorizedKeys": [
+          "sk-ecdsa-sha2-nistp256@openssh.com AAAAInNrLWVjZHNhLXNoYTItbmlzdHAyNTZAb3BlbnNzaC5jb20AAAAIbmlzdHAyNTYAAABBBA7OlFHG9YkxJNnArOlV3vDUdX/hk6ZdIuqnF30bsrenvAktUv0PQennCmoiJBf+HCRDnBQBd2wr8wKOQ370EFgAAAAEc3NoOg== jmanero@tmawh.local"
+        ]
+      }
+    ]
+  },
+  "systemd": {
+    "units": [
+      {
+        "enabled": false,
+        "name": "afterburn-sshkeys@core.service"
+      },
+      {
+        "enabled": false,
+        "name": "docker.socket"
+      }
+    ]
+  }
+}
